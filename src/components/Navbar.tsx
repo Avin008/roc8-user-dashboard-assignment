@@ -18,7 +18,10 @@ const Navbar = () => {
 
       <ul className="flex items-center gap-5">
         <li className="hover:cursor-pointer">
-          <HiOutlineBell size={20} />
+          <span className="relative">
+            <HiOutlineBell size={20} />
+            <span className="h-1 w-1 right-0 p-1 top-0 bg-[#AD0019] absolute rounded-full"></span>
+          </span>
         </li>
         <li className="flex gap-2 items-center">
           <div className="h-8 w-8 border border-gray-400 rounded-full">
