@@ -1,6 +1,6 @@
 const TeamMember = () => {
   return (
-    <div className="px-4 gap-2 space-y-1">
+    <div className="px-4 gap-2 space-y-3">
       <div className="flex gap-2">
         <div className="h-8 w-8 rounded-full">
           <img
@@ -14,13 +14,10 @@ const TeamMember = () => {
           <p className="text-xs">UX Junior</p>
         </div>
       </div>
-      <div>
-        <input
-          className="h-1 bg-gray-100"
-          type="range"
-          name=""
-          id=""
-        />
+      <div className="border relative flex items-center border-gray-300">
+        <span className="absolute left-4 hover:cursor-pointer">
+          😍
+        </span>
       </div>
     </div>
   );

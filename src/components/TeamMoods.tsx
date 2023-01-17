@@ -7,10 +7,9 @@ const TeamMoods = () => {
         Team mood
       </div>
       <ul className="flex flex-col space-y-4">
-        <TeamMember />
-        <TeamMember />
-        <TeamMember />
-        <TeamMember />
+        {[1, 2, 3, 4, 5].map((x) => (
+          <TeamMember />
+        ))}
       </ul>
     </div>
   );
