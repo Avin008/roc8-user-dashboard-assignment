@@ -2,7 +2,7 @@ import { HiOutlineBell } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 const Navbar = () => {
   return (
-    <div className="h-14 text-white text-sm fixed bg-[#303645] flex items-center justify-between px-8 left-0 right-0">
+    <div className="h-14 z-20 text-white text-sm fixed bg-[#303645] flex items-center justify-between px-8 left-0 right-0">
       <span className="text-2xl font-medium tracking-widest">
         <span className="text-[#00BFAE]">H</span>
         <span className="tracking-widest">OURS</span>
