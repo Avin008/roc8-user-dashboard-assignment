@@ -9,6 +9,7 @@ import {
 } from "react-icons/md";
 import BudgetStatus from "./BugetStatus";
 import ProjectCard from "./ProjectCard";
+import LineChart from "./LineChart";
 
 const Layout = () => {
   return (
@@ -22,6 +23,9 @@ const Layout = () => {
         </div>
         <div className="row-start-1 row-end-3 col-span-1">
           <TeamMoods />
+        </div>
+        <div className="col-span-2">
+          <LineChart />
         </div>
         <div className="col-span-6 row-start-3 row-end-4 h-36 space-y-5">
           <BudgetStatus />
