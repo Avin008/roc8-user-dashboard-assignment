@@ -8,7 +8,9 @@ const Navbar = () => {
         <span className="tracking-widest">OURS</span>
       </span>
       <ul className="flex gap-6">
-        <li className="hover:cursor-pointer">Dashboard</li>
+        <li className="hover:cursor-pointer border-b border-white">
+          Dashboard
+        </li>
         <li className="hover:cursor-pointer">Projects</li>
         <li className="hover:cursor-pointer">Team</li>
         <li className="hover:cursor-pointer">Clients</li>
