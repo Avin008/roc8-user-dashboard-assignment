@@ -21,11 +21,11 @@ const ProjectCard = () => {
       <div className="px-4">
         <span className="text-xs font-medium grid grid-cols-2 text-gray-400">
           Total Budget
-          <span>70.000 </span>
+          <span>70.000 £</span>
         </span>
         <span className="text-xs font-medium flex gap-5 text-gray-400">
           Profitiblity (100%)
-          <span>70.000 </span>
+          <span>70.000 £</span>
         </span>
       </div>
       <div className="border mt-3 border-gray-400 h-4 rounded-full mx-4">
