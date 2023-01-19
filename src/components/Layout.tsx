@@ -11,6 +11,7 @@ import BudgetStatus from "./BugetStatus";
 import ProjectCard from "./ProjectCard";
 import LineChart from "./LineChart";
 import LineChartContainer from "./LineChartContainer";
+import DoughnutChartContainer from "./DoughnutChartContainer";
 
 const Layout = () => {
   return (
@@ -29,6 +30,9 @@ const Layout = () => {
         <LineChartContainer>
           <LineChart />
         </LineChartContainer>
+        <DoughnutChartContainer>
+          <LineChart />
+        </DoughnutChartContainer>
         <div className="col-span-6 row-start-3 row-end-4 h-36 space-y-5">
           <BudgetStatus />
           <div className="gap-5 h-full grid grid-cols-4">
