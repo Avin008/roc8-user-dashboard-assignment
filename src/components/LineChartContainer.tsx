@@ -40,7 +40,7 @@ const LineChartContainer = ({
           <span>Month</span>
         </div>
       </div>
-      {children}
+      {/* {children} */}
     </div>
   );
 };
