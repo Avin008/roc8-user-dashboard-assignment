@@ -10,6 +10,7 @@ import {
 import BudgetStatus from "./BugetStatus";
 import ProjectCard from "./ProjectCard";
 import LineChart from "./LineChart";
+import LineChartContainer from "./LineChartContainer";
 
 const Layout = () => {
   return (
@@ -21,12 +22,13 @@ const Layout = () => {
             <StatusCard x={x} />
           ))}
         </div>
+
         <div className="row-start-1 row-end-3 col-span-1">
           <TeamMoods />
         </div>
-        <div className="col-span-2">
+        <LineChartContainer>
           <LineChart />
-        </div>
+        </LineChartContainer>
         <div className="col-span-6 row-start-3 row-end-4 h-36 space-y-5">
           <BudgetStatus />
           <div className="gap-5 h-full grid grid-cols-4">

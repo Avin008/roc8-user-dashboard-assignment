@@ -32,7 +32,7 @@ const labels = [
 
 const LineChart = () => {
   return (
-    <div className="h-full w-full bg-white">
+    <div className="h-full= w-full bg-white">
       <Line
         options={{
           responsive: true,
