@@ -17,6 +17,6 @@
     "jsx": "react-jsx"
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
+  "exclude": ["src/components/LineChart.tsx", "src/components/DoughnutChart.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
