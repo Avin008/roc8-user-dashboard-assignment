@@ -23,35 +23,35 @@ const StatusCard = ({ x }: { x: number }) => {
         <h2 className="font-extrabold text-3xl">{x}</h2>
         <p>Total Projects</p>
       </div>
-      <span className="absolute left-4 top-4">
+      <span className="absolute left-4 top-2">
         {x === 1 && (
           <MdGridView
             className="text-[#6DDDDC]"
-            size={30}
+            size={25}
           />
         )}
         {x === 2 && (
           <BsCheck2Circle
             className="text-[#6DDDDC]"
-            size={30}
+            size={25}
           />
         )}
         {x === 3 && (
           <AiOutlineSync
             className="text-[#6DDDDC]"
-            size={30}
+            size={25}
           />
         )}
         {x === 4 && (
           <AiOutlineWarning
             className="text-red-300"
-            size={30}
+            size={25}
           />
         )}
         {x === 5 && (
           <MdOutlinePeople
             className="text-[#6DDDDC]"
-            size={30}
+            size={25}
           />
         )}
       </span>
