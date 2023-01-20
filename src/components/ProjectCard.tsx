@@ -42,13 +42,19 @@ const ProjectCard = ({
       </div>
       <div
         className={`border mt-3 border-gray-400 h-4 rounded-full mx-4 ${
-          appData.id === 2 && "bg-[#FAE4B3]"
-        }`}
+          appData.id === 1 && "bg-[#f5dca7]}"
+        } ${appData.id === 2 && "bg-[#FFE7AE]"} ${
+          appData.id === 3 && "bg-[#C8E6E3]"
+        } ${appData.id === 4 && "bg-[#C8E6E3]"}`}
       >
         <div
-          className={`bg-red-500 w-[90%] h-full rounded-full ${
-            appData.id === 3 && "bg-[#C78C0E]"
-          }`}
+          className={`${
+            appData.id === 1 && "bg-red-500 w-full"
+          } ${appData.id === 2 && "bg-[#E49100] w-[60%]"} ${
+            appData.id === 3 && "bg-[#008073] w-[60%]"
+          } ${
+            appData.id === 4 && "bg-[#008073]"
+          } rounded-full h-full`}
         ></div>
       </div>
       <div className="flex justify-between mt-2 text-[10px] px-4">

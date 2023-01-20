@@ -73,7 +73,7 @@ export const appData: {
     hourStatus: "100 Over Budget!",
   },
   {
-    id: 1,
+    id: 2,
     name: "Neo",
     madeBy: "Bankia",
     totalBudget: "70.000",
@@ -82,7 +82,7 @@ export const appData: {
     hourStatus: "1000 sold hours!",
   },
   {
-    id: 1,
+    id: 3,
     name: "VR Website",
     madeBy: "Barca",
     totalBudget: "70.000",
@@ -91,7 +91,7 @@ export const appData: {
     hourStatus: "100 Over Budget!",
   },
   {
-    id: 1,
+    id: 4,
     name: "VR Website",
     madeBy: "Barca",
     totalBudget: "70.000",
