@@ -12,24 +12,24 @@ const TeamMember = ({
   const expressMoodWithEmoji = (
     mood: number
   ): { emoji: string; position: string } | undefined => {
-    if (mood > 10 && mood <= 20) {
-      return { emoji: "😠", position: "" };
+    if (mood >= 10 && mood <= 20) {
+      return { emoji: "😠", position: "-left-2" };
     } else if (mood >= 20 && mood <= 30) {
-      return { emoji: "😠", position: "" };
+      return { emoji: "😠", position: "left-6" };
     } else if (mood >= 30 && mood <= 40) {
       return { emoji: "😠", position: "left-21" };
     } else if (mood >= 40 && mood <= 50) {
-      return { emoji: "😠", position: "left-20" };
+      return { emoji: "😠", position: "left-14" };
     } else if (mood >= 50 && mood <= 60) {
-      return { emoji: "😠", position: "left-16" };
+      return { emoji: "😠", position: "left-10" };
     } else if (mood >= 60 && mood <= 70) {
       return { emoji: "😠", position: "left-14" };
     } else if (mood >= 70 && mood <= 80) {
-      return { emoji: "😠", position: "left-12" };
+      return { emoji: "😠", position: "left-24" };
     } else if (mood >= 80 && mood <= 90) {
-      return { emoji: "😠", position: "left-8" };
+      return { emoji: "😠", position: "left-20" };
     } else if (mood >= 90 && mood <= 100) {
-      return { emoji: "😠", position: "left-4" };
+      return { emoji: "😠", position: "left-32" };
     }
   };
 
