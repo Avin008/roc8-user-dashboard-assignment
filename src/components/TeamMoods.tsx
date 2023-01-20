@@ -1,3 +1,4 @@
+import { teamMembers } from "../data";
 import TeamMember from "./TeamMember";
 
 const TeamMoods = () => {
@@ -7,8 +8,8 @@ const TeamMoods = () => {
         Team mood
       </div>
       <ul className="flex flex-col space-y-8">
-        {[1, 2, 3, 4, 5].map((x) => (
-          <TeamMember />
+        {teamMembers.map((teamMemberData) => (
+          <TeamMember teamMemberData={teamMemberData} />
         ))}
       </ul>
     </div>

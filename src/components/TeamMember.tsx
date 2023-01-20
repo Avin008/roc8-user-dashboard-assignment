@@ -1,4 +1,14 @@
-const TeamMember = () => {
+const TeamMember = ({
+  teamMemberData,
+}: {
+  teamMemberData: {
+    id: number;
+    img: string;
+    name: string;
+    degisnation: string;
+    mood: number;
+  };
+}) => {
   return (
     <div className="px-4 gap-2 space-y-3">
       <div className="flex gap-2">
@@ -10,8 +20,12 @@ const TeamMember = () => {
           />
         </div>
         <div>
-          <h1 className="text-sm font-medium">Andrea</h1>
-          <p className="text-xs">UX Junior</p>
+          <h1 className="text-sm font-medium">
+            {teamMemberData.name}
+          </h1>
+          <p className="text-xs">
+            {teamMemberData.degisnation}
+          </p>
         </div>
       </div>
       <div className="border relative flex items-center border-gray-300">
