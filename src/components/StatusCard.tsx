@@ -8,47 +8,57 @@ import {
   AiOutlineWarning,
 } from "react-icons/ai";
 
-const StatusCard = ({ x }: { x: number }) => {
+type ProjectStatus = {
+  projectStatus: {
+    id: number;
+    status: number;
+    name: string;
+  };
+};
+
+const StatusCard = ({ projectStatus }: ProjectStatus) => {
   return (
     <div
       className={`w-full relative bg-white h-full flex items-center justify-center shadow-lg ${
-        x === 4 && "bg-[#EB6482]"
+        projectStatus.id === 4 && "bg-[#EB6482]"
       }`}
     >
       <div
         className={`flex flex-col gap-2 justify-center items-center ${
-          x === 4 && "text-white"
+          projectStatus.id === 4 && "text-white"
         }`}
       >
-        <h2 className="font-extrabold text-3xl">{x}</h2>
-        <p>Total Projects</p>
+        <h2 className="font-extrabold text-3xl">
+          {projectStatus.status}
+        </h2>
+        <p>{projectStatus.name}</p>
       </div>
       <span className="absolute left-4 top-2">
-        {x === 1 && (
+        {projectStatus.id === 1 && (
           <MdGridView
             className="text-[#6DDDDC]"
             size={25}
           />
         )}
-        {x === 2 && (
+        {projectStatus.id === 2 && (
           <BsCheck2Circle
             className="text-[#6DDDDC]"
             size={25}
           />
         )}
-        {x === 3 && (
+        {projectStatus.id === 3 && (
           <AiOutlineSync
             className="text-[#6DDDDC]"
             size={25}
           />
         )}
-        {x === 4 && (
+        {projectStatus.id === 4 && (
           <AiOutlineWarning
             className="text-red-300"
             size={25}
           />
         )}
-        {x === 5 && (
+        {projectStatus.id === 5 && (
           <MdOutlinePeople
             className="text-[#6DDDDC]"
             size={25}
