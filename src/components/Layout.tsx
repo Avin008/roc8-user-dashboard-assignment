@@ -31,6 +31,12 @@ const Layout = () => {
           <DoughnutChart />
         </DoughnutChartContainer>
         <TeamMoods />
+        <BudgetStatus />
+      </div>
+      <div className="grid grid-cols-4 gap-5 mx-auto w-11/12 pb-5">
+        {[1, 2, 34, 5].map((x) => (
+          <ProjectCard />
+        ))}
       </div>
     </div>
   );

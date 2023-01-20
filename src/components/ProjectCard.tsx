@@ -1,6 +1,6 @@
 const ProjectCard = () => {
   return (
-    <div className="h-full w-full shadow-md bg-white">
+    <div className="h-full w-full shadow-md bg-white pb-5">
       <div className="flex justify-between p-4">
         <div className="">
           <h1 className="font-medium text">

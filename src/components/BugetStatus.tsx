@@ -6,7 +6,7 @@ import {
 } from "react-icons/md";
 const BudgetStatus = () => {
   return (
-    <div className="flex gap-5 items-center">
+    <div className="flex gap-5 col-span-6 items-center">
       <span className="font-medium text-xl">
         Budget status
       </span>
