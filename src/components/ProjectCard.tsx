@@ -1,6 +1,6 @@
-const ProjectCard = () => {
+const ProjectCard = ({ x }: { x: number }) => {
   return (
-    <div className="h-full w-full shadow-md bg-white pb-5">
+    <div className="h-full w-full shadow-md bg-white pb-3">
       <div className="flex justify-between p-4">
         <div className="">
           <h1 className="font-medium text">
@@ -28,8 +28,22 @@ const ProjectCard = () => {
           <span>70.000 £</span>
         </span>
       </div>
-      <div className="border mt-3 border-gray-400 h-4 rounded-full mx-4">
-        <div className="bg-red-500 w-full h-full rounded-full"></div>
+      <div
+        className={`border mt-3 border-gray-400 h-4 rounded-full mx-4 ${
+          x === 2 && "bg-[#FAE4B3]"
+        }`}
+      >
+        <div
+          className={`bg-red-500 w-[90%] h-full rounded-full ${
+            x === 3 && "bg-[#C78C0E]"
+          }`}
+        ></div>
+      </div>
+      <div className="flex justify-between mt-2 text-[10px] px-4">
+        <span>Actual hours: 1.100</span>
+        <span className="font-medium">
+          100 hours over budget!
+        </span>
       </div>
     </div>
   );
