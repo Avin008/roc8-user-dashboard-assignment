@@ -54,9 +54,9 @@ const TeamMember = ({
           </p>
         </div>
       </div>
-      <div className="border relative h-1 flex items-center bg-gray-100 border-gray-300">
+      <div className="border relative h-1 flex items-center bg-gray-200 border-gray-300">
         <span
-          className={`absolute ${mood?.position} hover:cursor-pointer`}
+          className={`text-lg absolute ${mood?.position} hover:cursor-pointer`}
         >
           {mood?.emoji}
         </span>
