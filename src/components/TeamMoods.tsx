@@ -7,7 +7,7 @@ const TeamMoods = () => {
       <div className="font-medium px-4 h-10 flex items-center">
         Team mood
       </div>
-      <ul className="flex flex-col space-y-8">
+      <ul className="flex flex-col space-y-7">
         {teamMembers.map((teamMemberData) => (
           <TeamMember teamMemberData={teamMemberData} />
         ))}

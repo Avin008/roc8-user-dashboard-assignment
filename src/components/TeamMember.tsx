@@ -41,7 +41,7 @@ const TeamMember = ({
         <div className="h-8 w-8 rounded-full">
           <img
             className="w-full h-full object-cover rounded-full"
-            src="https://images.unsplash.com/photo-1629709200392-f3051760e529?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+            src={teamMemberData.img}
             alt=""
           />
         </div>
@@ -49,12 +49,12 @@ const TeamMember = ({
           <h1 className="text-sm font-medium">
             {teamMemberData.name}
           </h1>
-          <p className="text-xs">
+          <p className="text-xs font-medium text-gray-500">
             {teamMemberData.degisnation}
           </p>
         </div>
       </div>
-      <div className="border relative flex items-center border-gray-300">
+      <div className="border relative h-1 flex items-center bg-gray-100 border-gray-300">
         <span
           className={`absolute ${mood?.position} hover:cursor-pointer`}
         >
