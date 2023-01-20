@@ -42,7 +42,7 @@ const DoughnutChart = () => {
           (width - ctx.measureText(text).width) / 2
         ),
         textY = height / 2;
-      ctx.fillText(text, textX, textY - 50);
+      ctx.fillText(text, textX, textY - 40);
       ctx.save();
       ctx.font = "15px sans-serif";
       ctx.textBaseline = "top";
@@ -51,24 +51,29 @@ const DoughnutChart = () => {
           (width - ctx.measureText(text).width) / 2
         ),
         textY = height / 2;
-      ctx.fillText(text, textX, textY - 20);
+      ctx.fillText(text, textX, textY - 10);
       ctx.save();
     },
   };
 
   return (
-    <div className="w-[80%] h-[80%] relative">
+    <div className="w-[85%] h-[80%] relative">
       <Doughnut
         plugins={[centerText]}
         options={{
           aspectRatio: 1,
-          cutout: 80,
+          cutout: 100,
           radius: 110,
 
           plugins: {
             legend: {
               display: true,
               position: "bottom",
+              labels: {
+                usePointStyle: true,
+                pointStyle: "circle",
+                boxHeight: 7,
+              },
             },
           },
         }}
