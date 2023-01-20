@@ -53,3 +53,50 @@ export const teamMembers: {
     mood: 50,
   },
 ];
+
+export const appData: {
+  id: number;
+  name: string;
+  madeBy: string;
+  totalBudget: string;
+  profitiblity: string;
+  actualHours: string;
+  hourStatus: string;
+}[] = [
+  {
+    id: 1,
+    name: "Insurance App",
+    madeBy: "Verti",
+    totalBudget: "70.000",
+    profitiblity: "-2.500",
+    actualHours: "1.100",
+    hourStatus: "100 Over Budget!",
+  },
+  {
+    id: 1,
+    name: "Neo",
+    madeBy: "Bankia",
+    totalBudget: "70.000",
+    profitiblity: "-2.500",
+    actualHours: "1.100",
+    hourStatus: "1000 sold hours!",
+  },
+  {
+    id: 1,
+    name: "VR Website",
+    madeBy: "Barca",
+    totalBudget: "70.000",
+    profitiblity: "-2.500",
+    actualHours: "1.100",
+    hourStatus: "100 Over Budget!",
+  },
+  {
+    id: 1,
+    name: "VR Website",
+    madeBy: "Barca",
+    totalBudget: "70.000",
+    profitiblity: "-2.500",
+    actualHours: "1.100",
+    hourStatus: "100 Over Budget!",
+  },
+];

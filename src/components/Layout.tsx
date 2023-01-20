@@ -13,7 +13,7 @@ import LineChart from "./LineChart";
 import LineChartContainer from "./LineChartContainer";
 import DoughnutChartContainer from "./DoughnutChartContainer";
 import DoughnutChart from "./DoughnutChart";
-import { projectStatus } from "../data";
+import { appData, projectStatus } from "../data";
 
 const Layout = () => {
   return (
@@ -35,8 +35,8 @@ const Layout = () => {
         <BudgetStatus />
       </div>
       <div className="grid grid-cols-4 gap-5 mx-auto w-11/12 pb-5">
-        {[1, 2, 34, 5].map((x) => (
-          <ProjectCard x={x} />
+        {appData.map((x) => (
+          <ProjectCard appData={x} />
         ))}
       </div>
     </div>

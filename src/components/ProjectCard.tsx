@@ -1,13 +1,25 @@
-const ProjectCard = ({ x }: { x: number }) => {
+const ProjectCard = ({
+  appData,
+}: {
+  appData: {
+    id: number;
+    name: string;
+    madeBy: string;
+    totalBudget: string;
+    profitiblity: string;
+    actualHours: string;
+    hourStatus: string;
+  };
+}) => {
   return (
     <div className="h-full w-full shadow-md bg-white pb-3">
       <div className="flex justify-between p-4">
         <div className="">
           <h1 className="font-medium text">
-            Insurance App
+            {appData.name}
           </h1>
           <p className="text-sm font-medium text-gray-500">
-            Verti
+            {appData.madeBy}
           </p>
         </div>
         <div className="w-10 h-10 rounded-full border border-black">
@@ -21,28 +33,28 @@ const ProjectCard = ({ x }: { x: number }) => {
       <div className="px-4">
         <span className="text-xs font-medium grid grid-cols-2 text-gray-400">
           Total Budget
-          <span>70.000 £</span>
+          <span>{appData.totalBudget} £</span>
         </span>
         <span className="text-xs font-medium flex gap-5 text-gray-400">
           Profitiblity (100%)
-          <span>70.000 £</span>
+          <span>{appData.profitiblity} £</span>
         </span>
       </div>
       <div
         className={`border mt-3 border-gray-400 h-4 rounded-full mx-4 ${
-          x === 2 && "bg-[#FAE4B3]"
+          appData.id === 2 && "bg-[#FAE4B3]"
         }`}
       >
         <div
           className={`bg-red-500 w-[90%] h-full rounded-full ${
-            x === 3 && "bg-[#C78C0E]"
+            appData.id === 3 && "bg-[#C78C0E]"
           }`}
         ></div>
       </div>
       <div className="flex justify-between mt-2 text-[10px] px-4">
-        <span>Actual hours: 1.100</span>
+        <span>Actual hours: {appData.actualHours}</span>
         <span className="font-medium">
-          100 hours over budget!
+          {appData.hourStatus}
         </span>
       </div>
     </div>
