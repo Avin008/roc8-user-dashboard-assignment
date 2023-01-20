@@ -9,6 +9,32 @@ const TeamMember = ({
     mood: number;
   };
 }) => {
+  const expressMoodWithEmoji = (
+    mood: number
+  ): { emoji: string; position: string } | undefined => {
+    if (mood > 10 && mood <= 20) {
+      return { emoji: "😠", position: "" };
+    } else if (mood >= 20 && mood <= 30) {
+      return { emoji: "😠", position: "" };
+    } else if (mood >= 30 && mood <= 40) {
+      return { emoji: "😠", position: "left-21" };
+    } else if (mood >= 40 && mood <= 50) {
+      return { emoji: "😠", position: "left-20" };
+    } else if (mood >= 50 && mood <= 60) {
+      return { emoji: "😠", position: "left-16" };
+    } else if (mood >= 60 && mood <= 70) {
+      return { emoji: "😠", position: "left-14" };
+    } else if (mood >= 70 && mood <= 80) {
+      return { emoji: "😠", position: "left-12" };
+    } else if (mood >= 80 && mood <= 90) {
+      return { emoji: "😠", position: "left-8" };
+    } else if (mood >= 90 && mood <= 100) {
+      return { emoji: "😠", position: "left-4" };
+    }
+  };
+
+  const mood = expressMoodWithEmoji(teamMemberData.mood);
+
   return (
     <div className="px-4 gap-2 space-y-3">
       <div className="flex gap-2">
@@ -29,8 +55,10 @@ const TeamMember = ({
         </div>
       </div>
       <div className="border relative flex items-center border-gray-300">
-        <span className="absolute left-4 hover:cursor-pointer">
-          😍
+        <span
+          className={`absolute ${mood?.position} hover:cursor-pointer`}
+        >
+          {mood?.emoji}
         </span>
       </div>
     </div>
