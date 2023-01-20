@@ -1,3 +1,5 @@
+import { AiOutlineWarning } from "react-icons/ai";
+import { BsCheck2Circle } from "react-icons/bs";
 const ProjectCard = ({
   appData,
 }: {
@@ -12,7 +14,7 @@ const ProjectCard = ({
   };
 }) => {
   return (
-    <div className="h-full w-full shadow-md bg-white pb-3">
+    <div className="h-full w-full shadow-md bg-white pb-3 relative">
       <div className="flex justify-between p-4">
         <div className="">
           <h1 className="font-medium text">
@@ -46,6 +48,30 @@ const ProjectCard = ({
           </span>
         </span>
       </div>
+      {appData.id === 1 && (
+        <span
+          className={`absolute right-4 bottom-14 ${
+            appData.id === 1
+          }`}
+        >
+          <AiOutlineWarning
+            className="text-red-300"
+            size={20}
+          />
+        </span>
+      )}
+      {appData.id === 4 && (
+        <span
+          className={`absolute right-4 bottom-14 ${
+            appData.id === 4
+          }`}
+        >
+          <BsCheck2Circle
+            className="text-[#6DDDDC]"
+            size={20}
+          />
+        </span>
+      )}
       <div
         className={`border mt-3 border-gray-400 h-4 rounded-full mx-4 ${
           appData.id === 1 && "bg-[#f5dca7]}"
