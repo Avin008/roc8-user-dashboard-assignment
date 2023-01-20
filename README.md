@@ -11,7 +11,7 @@ https://github.com/Avin008/roc8-user-dashboard-assignment
 - Go to the project directory
 
 ```bash
-  cd Tribble-A-Social-Media-App
+  cd roc8-user-dashboard-assignment
 ```
 
 - Install dependencies
@@ -28,11 +28,8 @@ https://github.com/Avin008/roc8-user-dashboard-assignment
 
 <h2>Technologies used</h2>
 <ul>
-<li>NEXT JS</li>
+<li>React</li>
 <li>TypeScript</li>
-<li>Zustand</li>
-<li>Firebase</li>
-<li>React Query</li>
-<li>React Spinners</li>
 <li>Tailwind Css</li>
+<li>Chart.Js</li>
 </ul>
