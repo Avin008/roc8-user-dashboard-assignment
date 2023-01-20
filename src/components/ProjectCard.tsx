@@ -37,7 +37,13 @@ const ProjectCard = ({
         </span>
         <span className="text-xs font-medium flex gap-5 text-gray-400">
           Profitiblity (100%)
-          <span>{appData.profitiblity} £</span>
+          <span
+            className={`${
+              appData.id === 1 && "text-red-500"
+            }`}
+          >
+            {appData.profitiblity} £
+          </span>
         </span>
       </div>
       <div
@@ -59,7 +65,11 @@ const ProjectCard = ({
       </div>
       <div className="flex justify-between mt-2 text-[10px] px-4">
         <span>Actual hours: {appData.actualHours}</span>
-        <span className="font-medium">
+        <span
+          className={`font-medium ${
+            appData.id === 1 && "text-red-500 font-bold"
+          }`}
+        >
           {appData.hourStatus}
         </span>
       </div>
