@@ -9,7 +9,7 @@ const LineChartContainer = ({
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="bg-white col-span-3 p-2 w-full h-full">
+    <div className="bg-white col-span-3 row-span-3 p-2 w-full h-full">
       <div className="flex justify-between">
         <div className="flex flex-col text-xs leading-4">
           <span>Total Revenue</span>
@@ -40,7 +40,7 @@ const LineChartContainer = ({
           <span>Month</span>
         </div>
       </div>
-      {/* {children} */}
+      <div>{children}</div>
     </div>
   );
 };

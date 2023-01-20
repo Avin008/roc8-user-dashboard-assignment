@@ -9,7 +9,7 @@ const DoughnutChartContainer = ({
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="bg-white col-span-2 p-2 w-full h-full">
+    <div className="bg-white col-span-2 row-span-3 p-2 w-full h-full">
       <div className="flex justify-between">
         <div className="flex flex-col text-xs leading-4">
           <span>Budget</span>
@@ -37,7 +37,9 @@ const DoughnutChartContainer = ({
           <span>Status</span>
         </div>
       </div>
-      {/* {children} */}
+      <div className="flex items-start justify-center">
+        {children}
+      </div>
     </div>
   );
 };
