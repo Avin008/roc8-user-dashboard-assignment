@@ -56,13 +56,51 @@ const DoughnutChart = () => {
     },
   };
 
+  const customLabels = {
+    id: "customDataLabels",
+    afterDatasetDraw(
+      chart: any,
+      args: any,
+      pluginOptions: any
+    ) {
+      const {
+        ctx,
+        data,
+        chartArea: {
+          top,
+          bottom,
+          left,
+          right,
+          width,
+          height,
+        },
+      } = chart;
+
+      ctx.save();
+      data.datasets[0].data.forEach(
+        (datapoint: any, index: any) => {
+          if (datapoint >= 3) {
+            const { x, y } = chart
+              .getDatasetMeta(0)
+              .data[index].tooltipPosition();
+            ctx.font = "12px sans-serif";
+            ctx.fillStyle = data.datasets[0].borderColor[
+              index
+            ] = "white";
+            ctx.fillText(datapoint + "%", x - 10, y - 5);
+          }
+        }
+      );
+    },
+  };
+
   return (
     <div className="w-[85%] h-[80%] relative">
       <Doughnut
-        plugins={[centerText]}
+        plugins={[centerText, customLabels]}
         options={{
           aspectRatio: 1,
-          cutout: 100,
+          cutout: 90,
           radius: 110,
 
           plugins: {
